@@ -1,3 +1,5 @@
+/* ================= DESKTOP (Your Original CSS) ================= */
+
 body {
     background-color: #0f1014;
     margin: 0;
@@ -258,7 +260,6 @@ body {
     cursor: pointer;
 }
 
-
 .help-btn {
     position: absolute;
     top: 10vh;
@@ -326,122 +327,6 @@ body {
     transform: scale(1.15);
 }
 
-@media (max-width: 480px) {
-
-    body {
-        overflow-x: hidden;
-    }
-
-    .navigation {
-        width: 14vw;
-    }
-
-    .nav1 {
-        padding-left: 4vw;
-        gap: 2vh;
-    }
-
-    .logo img {
-        height: 6vh;
-        width: 6vh;
-    }
-
-    .main-movie {
-        margin-left: 0;
-        padding-left: 0;
-        align-items: center;
-        text-align: center;
-    }
-
-    .main img {
-        width: 100vw;
-        height: auto;
-        border-radius: 0;
-    }
-
-    .movie-name {
-        bottom: 32vh;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .movie-name img {
-        width: 50vw;
-    }
-
-    .rating,
-    .year,
-    .movie-detail,
-    .type {
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .watch-now {
-        padding-left: 0;
-    }
-
-    .watch-now button {
-        width: 80vw;
-        padding: 2.5vh 0;
-        font-size: 1rem;
-    }
-
-    .m1,
-    .top10-row {
-        padding-left: 5vw;
-        gap: 4vw;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        flex-wrap: nowrap;
-        scroll-snap-type: x mandatory;
-    }
-
-    .m1 img,
-    .movie-card img {
-        width: 32vw;
-        height: auto;
-    }
-
-    .rank {
-        font-size: 2.5rem;
-        left: -4vw;
-        top: 18vh;
-    }
-
-    .heading,
-    .top10-title {
-        padding-left: 5vw;
-        font-size: 1.2rem;
-    }
-
-    .footer {
-        padding: 4vh 5vw;
-        text-align: center;
-    }
-
-    .footer-top {
-        flex-direction: column;
-        gap: 3vh;
-        align-items: center;
-    }
-
-    .store-buttons img {
-        width: 40vw;
-    }
-
-    .social-icons img {
-        width: 6vw;
-        margin-right: 2vw;
-    }
-
-    .footer-links span {
-        display: block;
-        margin: 1vh 0;
-    }
-}
-
-
 .search-section {
     padding: 2vh 3vw;
 }
@@ -456,13 +341,6 @@ body {
     color: white;
     outline: none;
 }
-
-
-
-
-
-
-
 
 .overlay{
     width: 100vw;
@@ -593,6 +471,107 @@ input{
     color: #2ea0ff;
     cursor: pointer;
 }
+
+/* ====================== MOBILE RESPONSIVE (ONLY ADDED) ====================== */
+
+@media (max-width: 600px) {
+
+    .navigation {
+        width: 14vw;
+    }
+
+    .logo img {
+        height: 6vh;
+        width: 6vh;
+        padding-top: 2vh;
+    }
+
+    .nav1 {
+        gap: 2vh;
+        padding-left: 4vw;
+    }
+
+    .main-movie, .mainpage {
+        margin-left: 16vw;
+        padding-left: 2vw;
+    }
+
+    .main img {
+        width: 92vw;
+        height: 40vh;
+    }
+
+    .movie-name img {
+        width: 45vw;
+    }
+
+    .watch-now button {
+        width: 60vw;
+        padding: 2vh 3vw;
+    }
+
+    .m1 {
+        padding-left: 16vw;
+        flex-wrap: wrap;
+    }
+
+    .movie-card img, .m1 img {
+        width: 38vw !important;
+        height: 22vh !important;
+    }
+
+    .top10-row {
+        flex-wrap: wrap;
+    }
+
+    .store-buttons img {
+        width: 40vw;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .login-box {
+        padding-left: 0;
+        padding-top: 15vh;
+        width: 100%;
+        margin-left: 16vw;
+    }
+
+    .center-img {
+        width: 70%;
+    }
+
+    /* Login Popup */
+    .login-box1 {
+        width: 90%;
+        padding: 4vh 4vw;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .qr-img {
+        width: 40vw;
+    }
+
+    .divider {
+        display: none;
+    }
+}
+
+
+
+ 
+
 
 
 
